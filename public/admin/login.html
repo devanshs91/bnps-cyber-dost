@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNPS Cyber Dost</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li id="logo-container">
+                <img src="/images/logo.png" id="bnps_logo">
+            </li>
+            <li id="logo-text"><a href="\index.html">CYBER DOST</a></li>
+            <div class="vert">
+            <li id="reportli" class="burg"><a href='/report-cyber-crime/report-cyber-crime.html' id="report">File Complaint</a></li>
+            <li id="ccli" class="burg"><a href='/cyber-crimes/cyber_crimes.html' id="cc">Cyber Crimes</a></li>
+            <li id="teamli" class="burg"><a href='/our-team/our-team.html' id="team">Our Team</a></li>
+            </div>
+
+        </ul>
+        <div class="menucon" onclick="functomove(this)">
+            <div class="menu1"></div>
+            <div class="menu2"></div>
+            <div class="menu3"></div> 
+        </div>
+    </div>
+    <div class="container">
+        <form method="post" action="/loginform">
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="emailid" placeholder="Enter Email">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password" name="passwordin" placeholder="Enter Password">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <input type="submit" id='sumbitBtn' value="Submit" onclick="sumbitted()">
+          </div>
+        </form>
+      </div> 
+</body>
+</html>
+</body>
+</html>

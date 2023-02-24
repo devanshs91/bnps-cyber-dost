@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Paytone One', sans-serif;
+    background-color: #E0BD2F;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #1941E0;
+    padding: 30px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    z-index: 1;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    justify-content: right;
+    height: 13px;
+}
+
+.navbar li {
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+
+.navbar li:hover {
+    background-color: #E0A218;
+    border-radius: 35px;
+}
+
+.vert {
+    display: inherit;
+    margin: inherit;
+    height: auto;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    order: -1;
+    margin-right: auto;
+    margin-left: -49px;
+  }
+  
+#bnps_logo {
+    margin-right: auto;
+    height: 50px;
+    width: auto;
+}
+
+#logo-container:hover {
+    background-color: transparent; 
+    border-radius: 0; 
+}
+
+#logo-text {
+    margin-right: auto;
+    margin-left: 2vh;
+    font-size: 39px;
+}
+
+#logo-text:hover {
+    background-color: transparent; 
+    border-radius: 0; 
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: 'Paytone One', sans-serif;
+  }
+  
+  /* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 2em;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+  
+  /* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+#sumbitBtn {
+  font-family: 'Paytone One', sans-serif;
+}
+
+#sumbitBtn:hover {
+  border: 2px solid #53cf5f;
+}
+
+.menucon {
+  display: none;
+}
+
+
+@media screen and (max-width: 860px) {
+  .menucon {
+      display: inline-block;
+      cursor: pointer;
+  }
+  .menu1, .menu2, .menu3{
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.4s;
+  }
+  .change .menu1 {
+      transform: translate(0, 7px) rotate(-45deg);
+    }
+    
+  .change .menu2 {opacity: 0;}
+  
+  .change .menu3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+    
+  #report, #cc, #team {
+      display: none;
+      font-size: 2vw;
+  }
+  #logo-container {
+      margin: auto;
+      padding-left: 6px;
+  }
+  #logo-text{
+      font-size: 6vw;
+      margin-top: 35px;
+  }
+  .navbar {
+      padding: 20px;
+  }
+  .navbar li {
+      padding: auto;
+  }
+  .main-text a {
+      font-size: 4vw;
+  }
+  .vert {
+      display: list-item; 
+      position: absolute;
+      bottom: 0;
+  }
+}
+

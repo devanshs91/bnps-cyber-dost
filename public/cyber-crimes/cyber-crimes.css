@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Paytone One', sans-serif;
+    background-color: #E0BD2F;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #1941E0;
+    padding: 30px;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    justify-content: right;
+    height: 13px;
+}
+
+.navbar li {
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+
+.navbar li:hover {
+    background-color: #E0A218;
+    border-radius: 35px;
+}
+
+.vert {
+    display: inherit;
+    margin: inherit;
+    height: auto;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    order: -1;
+    margin-right: auto;
+    margin-left: -49px;
+  }
+  
+#bnps_logo {
+    margin-right: auto;
+    height: 50px;
+    width: auto;
+}
+
+#logo-container:hover {
+    background-color: transparent; 
+    border-radius: 0; 
+}
+
+#logo-text {
+    margin-right: auto;
+    margin-left: 2vh;
+    font-size: 39px;
+}
+
+#logo-text:hover {
+    background-color: transparent; 
+    border-radius: 0; 
+}
+
+.menucon {
+    display: none;
+}
+
+.margtext {
+    margin: 0px;
+}
+.text-box {
+    margin: 4.5vw;
+}
+h2 {
+    color: #4046ff;
+    text-decoration: underline;
+}
+
+h1 {
+    text-decoration: underline;
+    color: white;
+     margin-left: 4vw;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 2em;
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+
+@media screen and (max-width: 860px) {
+    .menucon {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .menu1, .menu2, .menu3{
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .menu1 {
+        transform: translate(0, 7px) rotate(-45deg);
+      }
+      
+    .change .menu2 {opacity: 0;}
+    
+    .change .menu3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+      
+    #report, #cc, #team {
+        display: none;
+        font-size: 2vw;
+    }
+    #logo-container {
+        margin: auto;
+        padding-left: 6px;
+    }
+    #logo-text{
+        font-size: 6vw;
+        margin-top: 35px;
+    }
+    .navbar {
+        padding: 20px;
+    }
+    .navbar li {
+        padding: auto;
+    }
+    .main-text a {
+        font-size: 4vw;
+    }
+    .vert {
+        display: list-item; 
+        position: absolute;
+        bottom: 0;
+    }
+  }
+
+#watermark {
+    top: translate(navbar);
+    z-index: 99;
+    width: 20vw;
+    height: auto;
+    opacity: 0.5;
+    position: fixed;
+    border-radius: 5px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
